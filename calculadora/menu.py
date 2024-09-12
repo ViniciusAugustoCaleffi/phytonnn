@@ -15,10 +15,15 @@ class  Menu:
               '\n2. subtrair'+
               '\n3. dividir'+
               '\n4. multiplicar'+
-              '\n5. potencia'
+              '\n5. Potencia'+
               '\n6  raiz'+
-              '\n7. tabuada'
-              '\n8. numero')
+              '\n7. tabuada'+
+              '\n8. Exercicio01' +
+              '\n9. Exercicio02'+
+              '\n10. Exercicio03'+
+              '\n11. Exercicio04')
+
+
 
 
     def coletar(self):
@@ -46,7 +51,7 @@ class  Menu:
                 print(f'A divisao dos numeros digitados é:{self.opera.dividir(self.num1, self.num2)}')
             elif self.opcao == 5:
                 self.coletar()
-                print(f'A potencia dos numeros digitados é:{self.opera.potencia(self.num1, self.num2)}')
+                print(f'A potencia dos numeros digitados é:{self.opera.exercicio01(self.num1, self.num2)}')
 
             elif self.opcao == 6:
                 self.coletar()
@@ -59,9 +64,19 @@ class  Menu:
                 print(f'A tabuada de {self.num2} é: {self.opera.tabuada(self.num2)}')
 
             elif self.opcao == 8:
-                self.coletar()
-                print(f'Sequencia dos numero é: {self.opera.numeros(self.num1)}')
+                print(f'Sequencia dos numero é: {self.opera.exercicio01()}')
 
             elif self.opcao == 9:
-                self.coletar()
-                print(f'Sequencia dos numeros é: {self.opera.pares}')
+                print(f'Sequencia dos numeros é: {self.opera.exercicio02()}')
+
+            elif self.opcao == 10:
+                print(f'Sequencia dos numeros é: {self.opera.exercicio03()}')
+
+            elif self.opcao == 11:
+                print(f'Sequencia dos numeros é: {self.opera.exercicio04()}')
+
+            elif self.opcao == 12:
+                print(f'Sequencia dos numeros é: {self.opera.exercicio05()}')
+
+            else:
+                print("Codigo incorreto")

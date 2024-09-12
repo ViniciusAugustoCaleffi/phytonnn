@@ -41,16 +41,41 @@ class Operacao:
     def raiz(self,num):
         return math.sqrt(num)
 
-    def numeros(self, num1):
-        resultado = ""
-        for i in range(0, 11, 1):
-            resultado += f'\n{num1} + {i} = {num1 + i}  '
-        return resultado
+    def exercicio01(self):
+        msg = ""
+        for i in range(1, 11, 1):
+            msg += F'\n{i}'
+        return msg
 
-    def pares(self,num1):
+    def exercicio02(self):
 
-        resultado = ""
-        for i in range(0, 11, 1):
-            resultado += f'\n{num1} + {i} = {num1 + i}  '
-        return resultado
+        msg = ""
+        for i in range(2,21,2):
+            msg += F'\n{i}'
+        return msg
+
+    def exercicio03(self):
+        msg = ""
+        for i in range(1, 101,1):
+            msg += F'\n{i}'
+        return msg
+
+    def exercicio04(self):
+        msg=""
+        for i in range(1,51,1):
+            if i % 5 == 0:
+                msg += F'\n{i}'
+        return msg
+
+    def exercicio05(self):
+        msg=""
+        self.coletar(num1)
+        if num1 % 2 == 0:
+            msg += F'\n{"este numero é par"}'
+        else:
+            msg += F'\n{"este numero é impar"}'
+
+
+
+
 
