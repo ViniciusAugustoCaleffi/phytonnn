@@ -67,15 +67,96 @@ class Operacao:
                 msg += F'\n{i}'
         return msg
 
-    def exercicio05(self):
-        msg=""
-        self.coletar(num1)
-        if num1 % 2 == 0:
-            msg += F'\n{"este numero é par"}'
+    def exercicio05(self,num1):
+        self.coletar(self,num1)
+        return "par" if num1 % 2 == 0 else "impar"
+
+    def exercicio06(self,num1):
+        if num1 > 0:
+            return "positivo"
+        elif num1 < 0:
+            return "negativo"
         else:
-            msg += F'\n{"este numero é impar"}'
+            return "zero (0)"
+
+    def exercicio07(self,num1):
+            return [(f'{num1} x {i} = {num1 * i}')for i in range(1, 11, 1)]
+
+    def exercicio08(self,num1):
+            return list (range (1,num1 + 1))
+
+    def exercicio09(self,num1):
+            return sum (range (1,num1 + 1))
+
+    def exercicio10(self,num1):
+
+        self.coletar(self,num1)
+
+        for i in range(2,num1 + 1):
+
+            if (num1 % 2 != 0 and num1 % 3 != 0 and num1 % 5 != 0):
+
+                return (num1)
+
+    def exercicio11(self,num1):
+
+        self.coletar(self,num1)
+
+        if num1 % 2 or num1 % 3 or num1 % 5 != 0:
+
+            return "O numero é primo"
+        else:
+
+            return "O numero não é primo"
+
+    def exercicio12(self,num1):
+
+        self.coletar(self,num1)
+
+        resultado = math.factorial(num1)
+
+        return (f"O fatorial de {num1} é {resultado}")
+
+    def exercicio13(self):
+
+        num1=5
+
+        fatorial=1
+
+        for i in range(1, num1 + 1):
+            fatorial *= i
+            if i == 1:
+                print(f"{i}")
+            else:
+                print(f"\n * {i}")
+
+        return fatorial
+
+    def exercicio15(self,num1):
+        num1 = input("Digite um número: ")
+        num1_str = str(num1)
+        soma = 0
+        for digito in num1_str:
+            soma += int(digito)
+        return soma
 
 
+    def exercicio16(self,num1):
 
+        pares=[i for i in range(1,num1+1) if i % 2 == 0]
 
+        impares=[i for i in range(1,num1+1) if i % 2 !=0]
+
+        return f"pares:  {pares}\n impares: {impares}\n"
+
+    def exercicio17(self,num1):
+
+        self.coletar(self,num1)
+
+        if num1 <= 1:
+            return "O número não é primo"
+            for i in range(2, int(num1 ** 0.5) + 1):
+                if num1 % i == 0:
+                    return "O número não é primo"
+            return "O número é primo"
 
